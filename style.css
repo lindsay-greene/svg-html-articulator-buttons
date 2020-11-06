@@ -13,6 +13,7 @@ text {
   font-weight: bold;
   font-family: 'Verdana, sans-serif';
   /* text-anchor: middle; */
+  float: right;
 }
 
 tspan {
@@ -69,7 +70,7 @@ tspan {
 }
 
 body {
-  width: 100%;
+  width: 97%;
 }
 
 svg {
