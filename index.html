@@ -5,7 +5,7 @@
     <script src="main.js" defer></script>
 </head>
 <body>
-  <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 550">
+  <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 450">
     <title>Speech Articulator: Animated Speech Articulation Guide</title>
   
     <desc>
@@ -28,8 +28,6 @@
       You should have received a copy of the GNU Affero General Public License
       along with this program.  If not, see https://www.gnu.org/licenses/.
     </metadata>
-    
-    <text id="label" x="200" y="460" font-size="30" font-weight="bold" fill="brown" font-family="Verdana, sans-serif" text-anchor="middle">Speech Articulator</text>
 
   <g stroke="brown" stroke-width="2" fill="pink">
 
@@ -85,6 +83,106 @@
              C301,321 310,278 270,289 230,278 241,321 215,324 Z"/>
     </g>
   </g>
+
+  <g id="IPA-vowels">
+    <g id="newGroup" fill="none" stroke-linecap="round" stroke="white" stroke-width="1">
+      <line id="front-top--mid-top" x1="116" y1="61" x2="210" y2="61" stroke-dasharray="0, 25, 25"/>
+      <line id="mid-top--back-top" x1="210" y1="61" x2="301" y2="61" stroke-dasharray="0, 25, 40, 100"/>
+
+      <line id="front-top--front_open-mid" x1="116" y1="61" x2="147" y2="107"/>
+      <line id="mid-top--central_open-mid" x1="210" y1="61" x2="225" y2="107"/>
+      <line id="back-top--back_open-mid" x1="301" y1="61" x2="301" y2="107"/>
+
+      <line id="mid-top--central_open-mid" x1="147" y1="107" x2="225" y2="107"/>
+      <line id="central_open-mid--back_open-mid" x1="225" y1="107" x2="301" y2="107"/>
+
+      <line id="mid-top--close_front-mid" x1="147" y1="107" x2="177" y2="153"/>
+      <line id="central_open-mid--central_close-mid" x1="225" y1="107" x2="240" y2="153"/>
+      <line id="back_open-mid--back_close-mid" x1="301" y1="107" x2="301" y2="153"/>
+
+      <line id="close_front-mid--central_close-mid" x1="177" y1="153" x2="240" y2="153"/>
+      <line id="central_open-mid--back_open-mid" x1="240" y1="153" x2="301" y2="153"/>
+
+      <line id="close_front-mid--front-bottom" x1="177" y1="153" x2="210" y2="201"/>
+      <line id="central_open-mid--central-bottom" x1="240" y1="153" x2="257" y2="201"/>
+      <line id="back_close-mid--back-bottom" x1="301" y1="153" x2="301" y2="201"/>
+
+      <line id="front-bottom--central-bottom" x1="210" y1="201" x2="257" y2="201"/>
+      <line id="central-bottom--back-bottom" x1="257" y1="201" x2="301" y2="201"/>
+    </g>
+
+    <g fill="white" stroke="white">
+      <circle id="front-top" cx="116" cy="61" r="2"/>
+      <circle id="mid-top" cx="210" cy="61" r="2"/>
+      <circle id="back-top" cx="301" cy="61" r="2"/>
+
+      <circle id="front_open-mid" cx="147" cy="107" r="2"/>
+      <circle id="central_open-mid" cx="225" cy="107" r="2"/>
+      <circle id="back_open-mid" cx="301" cy="107" r="2"/>
+
+      <circle id="close_front-mid" cx="177" cy="153" r="2"/>
+      <circle id="central_close-mid" cx="240" cy="153" r="2"/>
+      <circle id="back_close-mid" cx="301" cy="153" r="2"/>
+
+      <circle id="front-bottom" cx="210" cy="201" r="2"/>
+      <circle id="central-bottom" cx="257" cy="201" r="1" display="none"/>
+      <circle id="back-bottom" cx="301" cy="201" r="2"/>
+
+    </g>
+
+    <g fill="brown" stroke="none" text-anchor="middle" font-family="'Lucida Sans Unicode','Doulos SIL','Arial Unicode MS',Verdana,Arial,Helvetica,sans-serif" font-size="20">
+      <text id="front-close" x="106" y="66">i</text>
+      <text id="front-close" x="131" y="66">y</text>
+      <text id="mid-close" x="199" y="66">ɨ</text>
+      <text id="mid-close" x="225" y="66">ʉ</text>
+      <text id="back-close" x="286" y="66">ɯ</text>
+      <text id="back-close" x="316" y="66">u</text>
+
+      <text id="" x="153" y="86">ɪ</text>
+      <text id="" x="169" y="86">ʏ</text>
+      <text id="" x="262" y="86">ʊ</text>
+
+      <text id="open_close-mid" x="132" y="112">e</text>
+      <text id="open_close-mid" x="163" y="112">ø</text>
+      <text id="open_central-mid" x="210" y="112">ɘ</text>
+      <text id="open_central-mid" x="240" y="112">ɵ</text>
+      <text id="open_back-mid" x="286" y="112">ɤ</text>
+      <text id="open_back-mid" x="316" y="112">o</text>
+
+      <text id="" x="234" y="134">ə</text>
+
+      <text id="close_front-mid" x="162" y="158">ɛ</text>
+      <text id="close_front-mid" x="193" y="158">œ</text>
+      <text id="central_close-mid" x="225" y="158">ɜ</text>
+      <text id="central_close-mid" x="255" y="158">ɞ</text>
+      <text id="back_close-mid" x="286" y="158">ʌ</text>
+      <text id="back_close-mid" x="316" y="158">ɔ</text>
+
+      <text id="" x="177" y="183">æ</text>
+      <text id="" x="250" y="183">ɐ</text>
+
+      <text id="front-bottom" x="195" y="206">a</text>
+      <text id="front-bottom" x="225" y="206">ɶ</text>
+      <text id="back-bottom" x="286" y="206">ɑ</text>
+      <text id="back-bottom" x="316" y="206">ɒ</text>
+
+    </g>
+    <!--
+     Vowels      Front     Central     Back
+    Close       i ∙ y     ɨ ∙ ʉ       ɯ ∙ u
+                      ɪ ʏ           ʊ
+    Close-mid       e ∙ ø   ɘ ∙ ɵ     ɤ ∙ o
+                                ə
+    Open-mid        ɛ ∙ œ     ɜ ∙ ɞ   ʌ ∙ ɔ
+                      æ           ɐ
+    Open                a ∙ ɶ         ɑ ∙ ɒ
+     -->
+  </g>
+  </svg>
+
+
+
+  <h1 id="label">Speech Articulator</h1>
 
   <g id="control-panel" transform="translate(390, 5)">
 
@@ -241,102 +339,5 @@
       <text id="ipa-label" x="40" y="15">vowels</text>
     </g>
   </g>
-
-
-  <g id="IPA-vowels">
-    <g id="newGroup" fill="none" stroke-linecap="round" stroke="white" stroke-width="1">
-      <line id="front-top--mid-top" x1="116" y1="61" x2="210" y2="61" stroke-dasharray="0, 25, 25"/>
-      <line id="mid-top--back-top" x1="210" y1="61" x2="301" y2="61" stroke-dasharray="0, 25, 40, 100"/>
-
-      <line id="front-top--front_open-mid" x1="116" y1="61" x2="147" y2="107"/>
-      <line id="mid-top--central_open-mid" x1="210" y1="61" x2="225" y2="107"/>
-      <line id="back-top--back_open-mid" x1="301" y1="61" x2="301" y2="107"/>
-
-      <line id="mid-top--central_open-mid" x1="147" y1="107" x2="225" y2="107"/>
-      <line id="central_open-mid--back_open-mid" x1="225" y1="107" x2="301" y2="107"/>
-
-      <line id="mid-top--close_front-mid" x1="147" y1="107" x2="177" y2="153"/>
-      <line id="central_open-mid--central_close-mid" x1="225" y1="107" x2="240" y2="153"/>
-      <line id="back_open-mid--back_close-mid" x1="301" y1="107" x2="301" y2="153"/>
-
-      <line id="close_front-mid--central_close-mid" x1="177" y1="153" x2="240" y2="153"/>
-      <line id="central_open-mid--back_open-mid" x1="240" y1="153" x2="301" y2="153"/>
-
-      <line id="close_front-mid--front-bottom" x1="177" y1="153" x2="210" y2="201"/>
-      <line id="central_open-mid--central-bottom" x1="240" y1="153" x2="257" y2="201"/>
-      <line id="back_close-mid--back-bottom" x1="301" y1="153" x2="301" y2="201"/>
-
-      <line id="front-bottom--central-bottom" x1="210" y1="201" x2="257" y2="201"/>
-      <line id="central-bottom--back-bottom" x1="257" y1="201" x2="301" y2="201"/>
-    </g>
-
-    <g fill="white" stroke="white">
-      <circle id="front-top" cx="116" cy="61" r="2"/>
-      <circle id="mid-top" cx="210" cy="61" r="2"/>
-      <circle id="back-top" cx="301" cy="61" r="2"/>
-
-      <circle id="front_open-mid" cx="147" cy="107" r="2"/>
-      <circle id="central_open-mid" cx="225" cy="107" r="2"/>
-      <circle id="back_open-mid" cx="301" cy="107" r="2"/>
-
-      <circle id="close_front-mid" cx="177" cy="153" r="2"/>
-      <circle id="central_close-mid" cx="240" cy="153" r="2"/>
-      <circle id="back_close-mid" cx="301" cy="153" r="2"/>
-
-      <circle id="front-bottom" cx="210" cy="201" r="2"/>
-      <circle id="central-bottom" cx="257" cy="201" r="1" display="none"/>
-      <circle id="back-bottom" cx="301" cy="201" r="2"/>
-
-    </g>
-
-    <g fill="brown" stroke="none" text-anchor="middle" font-family="'Lucida Sans Unicode','Doulos SIL','Arial Unicode MS',Verdana,Arial,Helvetica,sans-serif" font-size="20">
-      <text id="front-close" x="106" y="66">i</text>
-      <text id="front-close" x="131" y="66">y</text>
-      <text id="mid-close" x="199" y="66">ɨ</text>
-      <text id="mid-close" x="225" y="66">ʉ</text>
-      <text id="back-close" x="286" y="66">ɯ</text>
-      <text id="back-close" x="316" y="66">u</text>
-
-      <text id="" x="153" y="86">ɪ</text>
-      <text id="" x="169" y="86">ʏ</text>
-      <text id="" x="262" y="86">ʊ</text>
-
-      <text id="open_close-mid" x="132" y="112">e</text>
-      <text id="open_close-mid" x="163" y="112">ø</text>
-      <text id="open_central-mid" x="210" y="112">ɘ</text>
-      <text id="open_central-mid" x="240" y="112">ɵ</text>
-      <text id="open_back-mid" x="286" y="112">ɤ</text>
-      <text id="open_back-mid" x="316" y="112">o</text>
-
-      <text id="" x="234" y="134">ə</text>
-
-      <text id="close_front-mid" x="162" y="158">ɛ</text>
-      <text id="close_front-mid" x="193" y="158">œ</text>
-      <text id="central_close-mid" x="225" y="158">ɜ</text>
-      <text id="central_close-mid" x="255" y="158">ɞ</text>
-      <text id="back_close-mid" x="286" y="158">ʌ</text>
-      <text id="back_close-mid" x="316" y="158">ɔ</text>
-
-      <text id="" x="177" y="183">æ</text>
-      <text id="" x="250" y="183">ɐ</text>
-
-      <text id="front-bottom" x="195" y="206">a</text>
-      <text id="front-bottom" x="225" y="206">ɶ</text>
-      <text id="back-bottom" x="286" y="206">ɑ</text>
-      <text id="back-bottom" x="316" y="206">ɒ</text>
-
-    </g>
-    <!--
-     Vowels      Front     Central     Back
-    Close       i ∙ y     ɨ ∙ ʉ       ɯ ∙ u
-                      ɪ ʏ           ʊ
-    Close-mid       e ∙ ø   ɘ ∙ ɵ     ɤ ∙ o
-                                ə
-    Open-mid        ɛ ∙ œ     ɜ ∙ ɞ   ʌ ∙ ɔ
-                      æ           ɐ
-    Open                a ∙ ɶ         ɑ ∙ ɒ
-     -->
-  </g>
-  </svg>
 </body>
 </html>
